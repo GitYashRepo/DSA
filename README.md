@@ -1,2 +1,5 @@
 # DSA
-All Questions Practice in JavaScript (2026 target MAANG);
+### All Topics For DSA -
+### Target - MAANG { 2026 }
+
+- All Questions From LeetCode, HackerRank, GeeksForGeeks .
