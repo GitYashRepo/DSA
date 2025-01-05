@@ -4,17 +4,18 @@
     - An array is a data structure that stores a collection of elements. These elements can be of any data type (numbers, strings, objects, etc.). In JavaScript, arrays are dynamic, meaning they can grow or shrink in size and can hold elements of mixed types.
 
 ### 2. Declaring an Array
-
+```
 // Empty array
 let arr = [];
 // Array with elements
 let numbers = [1, 2, 3, 4, 5];
 let mixed = [1, "Hello", true, { key: "value" }, [1, 2, 3]];
+```
 
 ### 3. Common Array Methods
-    - JavaScript arrays come with built-in methods that simplify operations:
+- JavaScript arrays come with built-in methods that simplify operations:
 
-- Adding/Removing Elements
+### Adding/Removing Elements
 - push(element): Adds an element to the end of the array.
 - pop(): Removes and returns the last element of the array.
 - unshift(element): Adds an element to the beginning of the array.
