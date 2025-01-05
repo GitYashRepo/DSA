@@ -58,7 +58,7 @@ let mixed = [1, "Hello", true, { key: "value" }, [1, 2, 3]];
 
 ### 6. Example Problems
 - Example 1: Reverse an Array
-function reverseArray(arr) {
+``` function reverseArray(arr) {
   let start = 0, end = arr.length - 1;
   while (start < end) {
     [arr[start], arr[end]] = [arr[end], arr[start]]; // Swap
@@ -70,7 +70,7 @@ function reverseArray(arr) {
 console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
 
 - Example 2: Find Maximum Subarray Sum (Kadane's Algorithm)
-function maxSubArraySum(arr) {
+``` function maxSubArraySum(arr) {
   let maxSum = arr[0];
   let currentSum = arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -83,19 +83,19 @@ console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
 
 
 - Example 3: Merge Two Sorted Arrays
-function mergeArrays(arr1, arr2) { <br>
-  let result = []; <br>
-  let i = 0, j = 0; <br>
-  while (i < arr1.length && j < arr2.length) { <br>
-    if (arr1[i] < arr2[j]) { <br>
-      result.push(arr1[i++]); <br>
-    } else { <br>
-      result.push(arr2[j++]); <br>
-    } <br>
-  } <br>
-  return result.concat(arr1.slice(i)).concat(arr2.slice(j)); <br>
-} <br>
-console.log(mergeArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6] <br>
+``` function mergeArrays(arr1, arr2) {
+  let result = [];
+  let i = 0, j = 0;
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      result.push(arr1[i++]);
+    } else {
+      result.push(arr2[j++]);
+    }
+  }
+  return result.concat(arr1.slice(i)).concat(arr2.slice(j));
+}
+console.log(mergeArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
 
 
 ### 7. Advanced Topics
