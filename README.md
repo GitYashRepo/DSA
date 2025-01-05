@@ -3,6 +3,7 @@
 ### Target - MAANG { 2026 }
 
 - All Questions From LeetCode, HackerRank, GeeksForGeeks .
+- Daily atleast 5 questions.
 - I will push only those questions on which i have full command and also i have grasped its concept.
 - Perpose of this repo is to show my DSA skills to recruiters while applying in Companies like MAANG, TCS, InfoSys etc.
 
