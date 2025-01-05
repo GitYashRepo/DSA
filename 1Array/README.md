@@ -58,7 +58,8 @@ let mixed = [1, "Hello", true, { key: "value" }, [1, 2, 3]];
 
 ### 6. Example Problems
 - Example 1: Reverse an Array
-``` function reverseArray(arr) {
+```
+function reverseArray(arr) {
   let start = 0, end = arr.length - 1;
   while (start < end) {
     [arr[start], arr[end]] = [arr[end], arr[start]]; // Swap
@@ -68,9 +69,11 @@ let mixed = [1, "Hello", true, { key: "value" }, [1, 2, 3]];
   return arr;
 }
 console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
+```
 
 - Example 2: Find Maximum Subarray Sum (Kadane's Algorithm)
-``` function maxSubArraySum(arr) {
+```
+function maxSubArraySum(arr) {
   let maxSum = arr[0];
   let currentSum = arr[0];
   for (let i = 1; i < arr.length; i++) {
@@ -80,10 +83,11 @@ console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
   return maxSum;
 }
 console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
-
+```
 
 - Example 3: Merge Two Sorted Arrays
-``` function mergeArrays(arr1, arr2) {
+```
+function mergeArrays(arr1, arr2) {
   let result = [];
   let i = 0, j = 0;
   while (i < arr1.length && j < arr2.length) {
@@ -96,11 +100,12 @@ console.log(maxSubArraySum([-2, 1, -3, 4, -1, 2, 1, -5, 4])); // Output: 6
   return result.concat(arr1.slice(i)).concat(arr2.slice(j));
 }
 console.log(mergeArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
-
+```
 
 ### 7. Advanced Topics
 - Multi-dimensional Arrays: Arrays of arrays, used for grid-like data (e.g., matrices).
 - Sparse Arrays: Arrays with undefined or missing indices.
 - Typed Arrays: For performance-critical tasks (e.g., Int8Array, Float32Array).
-# Conclusion
+
+### Conclusion
 - Arrays are a versatile and powerful structure in JavaScript. Mastering arrays and their methods is crucial for solving problems efficiently in DSA. The examples and concepts provided form the foundation for tackling a wide variety of algorithmic challenges.
